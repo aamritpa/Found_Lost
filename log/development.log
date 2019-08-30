@@ -1,0 +1,1326 @@
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (147.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (140.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Migrating to CreateMessages (20190828013942)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190828013942_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190828013942"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (134.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-28 01:39:49.937120"], ["updated_at", "2019-08-28 01:39:49.937120"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (92.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-08-27 18:42:42 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/amrit/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/amrit/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.8ms)
+Completed 200 OK in 47ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 18:47:14 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1516ms (Views: 1504.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 18:58:11 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 4152ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4489313113733003337_46980968071900'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:00:23 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:19
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4489313113733003337_69873202309260'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:00:54 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:19
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4489313113733003337_69873190575000'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:01:41 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4489313113733003337_69873204146900'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:02:28 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1200779299272235267_47102390367400'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:03:59 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1200779299272235267_69975871274180'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:04:11 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1200779299272235267_69975872913060'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:04:19 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 629ms (Views: 627.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:04:22 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:05:10 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 479ms (Views: 470.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:06:10 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2175314771778708998_46974785692000'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:07:32 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/config
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/images
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/app/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/actionview-5.2.3/lib/assets/compiled
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/amrit/sfuhome/Newapp/MessageBoard/node_modules
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/amrit/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1941218785288607021_47028524920320'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:13:01 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2572ms (Views: 2563.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:14:09 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:21:29 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#new as HTML
+Completed 406 Not Acceptable in 58ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:22:49 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 419ms (Views: 395.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:26:51 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:26:55 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:28:40 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2019-08-27 19:28:52 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/view" for 127.0.0.1 at 2019-08-27 19:28:58 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for MessagesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:31:20 -0700
+Processing by MessagesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MessagesController::Messages):
+  
+app/controllers/messages_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2019-08-27 19:31:56 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (13.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 101ms (Views: 82.2ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:33:21 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 102ms (Views: 93.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-27 19:39:11 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (193.0ms)
+  Rendered messages/new.html.erb within layouts/application (194.2ms)
+Completed 200 OK in 300ms (Views: 285.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-30 10:49:39 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vSTNQC4vJaGptd8Co+XBdDCGjT+Gt+ElTueVkzG2/NQXLLDdS3i0aYIiqDjeSDPLNQIRgEtaLPHERyfhiXZynw==", "message"=>{"title"=>"Amritpal Singh", "description"=>"A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument."}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[36mMessage Create (55.1ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Amritpal Singh"], ["description", "A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument."], ["created_at", "2019-08-30 17:49:39.258069"], ["updated_at", "2019-08-30 17:49:39.258069"]]
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[35m (180.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 243ms (ActiveRecord: 235.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 10:49:39 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 10:57:19 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 504ms (Views: 502.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 10:57:36 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:06:14 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 1868ms (Views: 1843.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-30 11:06:21 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (274.5ms)
+  Rendered messages/new.html.erb within layouts/application (312.3ms)
+Completed 200 OK in 868ms (Views: 368.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-30 11:06:35 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/H5Axc6jAU8JYi2r3NY0W2WwT/owv7a7TdJ+gcsvCi1cJxABfj/HBRqCUX0kDUUs2+GK79sDG/jm9RwtSp4oHA==", "message"=>{"title"=>"Looking for toyato", "description"=>"hahahahah"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[36mMessage Create (86.2ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Looking for toyato"], ["description", "hahahahah"], ["created_at", "2019-08-30 18:06:35.628443"], ["updated_at", "2019-08-30 18:06:35.628443"]]
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[35m (258.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 354ms (ActiveRecord: 344.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:06:36 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-30 11:06:57 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for MessagesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-30 11:08:01 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:8
+Completed 406 Not Acceptable in 56ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-30 11:09:40 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (29.8ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:8
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 29.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `description' for nil:NilClass):
+    1: <h2><%= @message.title %></h2>
+    2: <p><%= @messgae.description %></p>
+  
+app/views/messages/show.html.erb:2:in `_app_views_messages_show_html_erb___3097798123148290571_69823771959580'
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-30 11:10:03 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:8
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 894ms (Views: 891.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:10:11 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:8
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:13:31 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (8.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 135ms (Views: 91.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2019-08-30 11:13:35 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 84ms (Views: 74.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-30 11:13:38 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (174.6ms)
+  Rendered messages/new.html.erb within layouts/application (205.1ms)
+Completed 200 OK in 281ms (Views: 264.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-30 11:13:58 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dKZci8k6d873ZvwkSO6z14FAqh8k6Tq3HFMqth6qWa/U/wxPeaaxhOSGgPKwNcKgPxFvCs9Vl/S3dEganxt7ng==", "message"=>{"title"=>"DASA TENU", "description"=>"NA BHAI NA"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (17.1ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "DASA TENU"], ["description", "NA BHAI NA"], ["created_at", "2019-08-30 18:13:58.121847"], ["updated_at", "2019-08-30 18:13:58.121847"]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (93.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 118ms (ActiveRecord: 111.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:13:58 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:15:41 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:15:44 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 119ms (Views: 72.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-30 11:15:48 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:15:51 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-30 11:16:57 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dKZci8k6d873ZvwkSO6z14FAqh8k6Tq3HFMqth6qWa/U/wxPeaaxhOSGgPKwNcKgPxFvCs9Vl/S3dEganxt7ng==", "message"=>{"title"=>"DASA TENU", "description"=>"NA BHAI NA"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "DASA TENU"], ["description", "NA BHAI NA"], ["created_at", "2019-08-30 18:16:57.304123"], ["updated_at", "2019-08-30 18:16:57.304123"]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (349.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 356ms (ActiveRecord: 350.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:16:57 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:28:39 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (24.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 912ms (Views: 859.4ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:29:20 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:29:23 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:29:27 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:29:29 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 77ms (Views: 74.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-30 11:29:31 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:29:33 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 86ms (Views: 82.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:29:34 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:29:35 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:29:35 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:29:35 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 130ms (Views: 126.8ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:30:19 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/3/edit" for 127.0.0.1 at 2019-08-30 11:30:24 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/edit.html.erb within layouts/application (882.6ms)
+Completed 500 Internal Server Error in 888ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `Edit' for #<#<Class:0x00007f02347f3090>:0x00007f02300097c0>
+Did you mean?  exit):
+    1: <%= Edit Message %>
+    2: 
+    3: <%= render 'form' %>
+  
+app/views/messages/edit.html.erb:1:in `_app_views_messages_edit_html_erb___1082348554532544684_69823686004940'
+Started GET "/messages/3/edit" for 127.0.0.1 at 2019-08-30 11:30:53 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:31
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (77.6ms)
+  Rendered messages/edit.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 168ms (Views: 164.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/messages/3" for 127.0.0.1 at 2019-08-30 11:31:04 -0700
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for MessagesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/3/edit" for 127.0.0.1 at 2019-08-30 11:53:58 -0700
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/controllers/messages_controller.rb:49: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/messages_controller.rb:49: syntax error, unexpected end-of-input, expecting end
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-30 11:54:03 -0700
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/controllers/messages_controller.rb:49: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/messages_controller.rb:49: syntax error, unexpected end-of-input, expecting end
+Started GET "/messages" for 127.0.0.1 at 2019-08-30 11:54:51 -0700
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+Started GET "/messages" for 127.0.0.1 at 2019-08-30 11:55:09 -0700
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+Started GET "/messages" for 127.0.0.1 at 2019-08-30 11:55:19 -0700
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/messages_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+Started GET "/messages" for 127.0.0.1 at 2019-08-30 11:55:45 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (3.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 351ms (Views: 323.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:55:48 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:4: syntax error, unexpected ',', expecting ')'
+...@output_buffer.append=( "Back", root_path );@output_buffer.s...
+...                              ^):
+  
+app/views/messages/show.html.erb:4: syntax error, unexpected ',', expecting ')'
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:56:16 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-30 11:56:21 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:56:22 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/4/edit" for 127.0.0.1 at 2019-08-30 11:56:23 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (11.0ms)
+  Rendered messages/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 130ms (Views: 112.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/messages/4" for 127.0.0.1 at 2019-08-30 11:56:30 -0700
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s2qY7PTtgBGjgjvp6LyN6M3uN0PqX+ei77PSGyJP8hkCm15V+YYZK83llnzLvWm+ko6uIUYMKzP7Fmtv11qSRw==", "message"=>{"title"=>"DASA TENU", "description"=>"NA BHAI NA NA NA ANA"}, "commit"=>"Update Message", "id"=>"4"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+  [1m[36mMessage Update (0.4ms)[0m  [1m[33mUPDATE "messages" SET "description" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["description", "NA BHAI NA NA NA ANA"], ["updated_at", "2019-08-30 18:56:30.458840"], ["id", 4]]
+  ↳ app/controllers/messages_controller.rb:30
+  [1m[35m (120.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+Redirected to http://localhost:3000/messages/4
+Completed 302 Found in 128ms (ActiveRecord: 121.1ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:56:30 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:58:56 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete, data: { "Are you sure...
+...                              ^
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected '}', expecting =>
+...delete, data: { "Are you sure"} );
+...                              ^
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:9: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:11: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/messages/show.html.erb:6: syntax error, unexpected '}', expecting =>
+app/views/messages/show.html.erb:9: syntax error, unexpected ensure, expecting ')'
+app/views/messages/show.html.erb:11: syntax error, unexpected end, expecting ')'
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-30 11:59:55 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete, data: { confirm: "Are...
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('

@@ -1324,3 +1324,2856 @@ SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.htm
 ...                              ^):
   
 app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:44:43 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (14.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (83.7ms)
+Completed 200 OK in 1378ms (Views: 1339.7ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/messages/4" for 127.0.0.1 at 2019-08-31 11:44:50 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete, data: { confirm: "Are...
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:44:53 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-31 11:44:55 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete, data: { confirm: "Are...
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 11:48:42 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 84ms (Views: 78.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-31 11:48:45 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete, data: { confirm: "Are...
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-31 11:49:16 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete );
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 11:49:18 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-31 11:49:19 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...essage_path(@message), method :delete );
+...                              ^):
+  
+app/views/messages/show.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 11:50:17 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:19 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:21 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:23 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:24 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:24 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:25 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:25 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:26 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:50:27 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 11:51:36 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2019-08-31 11:51:38 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/messages/2" for 127.0.0.1 at 2019-08-31 11:51:40 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5biBJHntmfTM2hHF8Sls7lEPPPcsP06Y1mXQfIBFIN1PsPy5HLoIPOdNZv+MhJ5RVIugSOHSg0xcxWIOOIWulg==", "id"=>"2"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[36mMessage Destroy (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[35m (173.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+Redirected to http://localhost:3000/
+Completed 302 Found in 180ms (ActiveRecord: 174.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:51:41 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2019-08-31 11:51:42 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/messages/3" for 127.0.0.1 at 2019-08-31 11:51:46 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SyJszPZMSLD9DLRCQEMSprOFdHAKJDTbczr1H1I7RwThKhFRkxvZeNabw3g97uAZtgHoz8fJ+Q/5mkdt6vvJTw==", "id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[36mMessage Destroy (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[35m (86.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 87.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:51:46 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 81ms (Views: 79.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:52:08 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 11:52:14 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (615.4ms)
+  Rendered messages/new.html.erb within layouts/application (617.7ms)
+Completed 200 OK in 684ms (Views: 681.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 11:52:36 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.4ms)
+  Rendered messages/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-31 11:52:45 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2bSu4ukDTipiPHy7cNeBXqr/Xdc7nhsExZFtQcic5C9zvNN/jFTf4kmrC4ENenPhr3vBaPZz1tBPMd8zcFxqZA==", "message"=>{"title"=>"Raminder", "description"=>"Sell it"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (124.5ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Raminder"], ["description", "Sell it"], ["created_at", "2019-08-31 18:52:45.238914"], ["updated_at", "2019-08-31 18:52:45.238914"]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (172.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 345ms (ActiveRecord: 297.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 11:52:45 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Migrating to DeviseCreateUsers (20190831185811)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190831185811_devise_create_users.rb:5
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190831185811_devise_create_users.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20190831185811_devise_create_users.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20190831185811_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190831185811"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (121.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:01:11 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 425ms (Views: 411.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:03:17 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:03:40 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:04:20 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:04:23 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:04:24 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:04:25 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:04:54 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:05:19 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:08:11 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 428ms (Views: 412.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 12:08:13 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (192.8ms)
+Completed 200 OK in 291ms (Views: 266.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-08-31 12:08:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (134.2ms)
+Completed 200 OK in 206ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:14:46 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2019-08-31 12:14:56 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93ms (Views: 75.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/5/edit" for 127.0.0.1 at 2019-08-31 12:14:59 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.6ms)
+  Rendered messages/edit.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/messages/5" for 127.0.0.1 at 2019-08-31 12:15:05 -0700
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UXT8KBgH2pYmoI/kpu708gPLH/bOwFEZKB8BxPbTNVlBjc36Bm+zA1lG5EtPVfUPCjROXbmp9O+fY84Dco10kw==", "message"=>{"title"=>"Raminder", "description"=>"Sell it??? WHY BRO"}, "commit"=>"Update Message", "id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+  [1m[36mMessage Update (1.1ms)[0m  [1m[33mUPDATE "messages" SET "description" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["description", "Sell it??? WHY BRO"], ["updated_at", "2019-08-31 19:15:05.801469"], ["id", 5]]
+  ↳ app/controllers/messages_controller.rb:30
+  [1m[35m (154.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+Redirected to http://localhost:3000/messages/5
+Completed 302 Found in 166ms (ActiveRecord: 155.8ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2019-08-31 12:15:05 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:15:08 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:15:10 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 78ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 12:15:12 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 93ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:15:14 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 110ms (Views: 108.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:17:31 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/amrit/sfuhome/Newapp/MessageBoard/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+      </div>
+      ^
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/layouts/application.html.erb:31: unknown regexp options - dv
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+    <p class="notice"><%= notice ;...
+    ^
+/home/amrit/sfuhome/Newapp/MessageBoard/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+    <p class="notice"><%= notice ;@output_buffer.saf...
+                      ^):
+  
+app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:31: unknown regexp options - dv
+app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:17:47 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 83ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2019-08-31 12:17:51 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:17:57 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 102ms (Views: 100.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 12:18:14 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-08-31 12:18:37 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hLKUFmfdvR3+hYgpCO3IFyB/a1Gfa5IeOeABmTlAOj9QvPYfl9IjTEjtsatXwL4NI/PZJLwyFLz04RGp2ObWLQ==", "user"=>{"email"=>"amrit@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amrit@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "amrit@gmail.com"], ["encrypted_password", "$2a$11$y4w9FvZWNRHZWDZnPRWlKe9aWVVyrWE6dQqfnQBubB8jwCA/hJdu."], ["created_at", "2019-08-31 19:18:37.349015"], ["updated_at", "2019-08-31 19:18:37.349015"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (101.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 331ms (ActiveRecord: 102.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:18:37 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:18:57 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.6ms)
+  Rendered messages/new.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:19:10 -0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.5ms)
+  Rendered messages/new.html.erb within layouts/application (16.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-31 12:19:20 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UW/qU0w28kLyDZB71zWHu9nFMjxlOd44MquPaahgk/zxNrqX/Ko0COHt7K0v7vbMZ5T3KY6Fc3uZjO3FKdGxzQ==", "message"=>{"title"=>"AMritasd", "description"=>"s,df s,mv,msv sdvlskv"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AMritasd"], ["description", "s,df s,mv,msv sdvlskv"], ["created_at", "2019-08-31 19:19:20.201228"], ["updated_at", "2019-08-31 19:19:20.201228"]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (275.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 284ms (ActiveRecord: 277.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:19:20 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Migrating to AddUserIdToMessages (20190831192151)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "messages" ADD "user_id" integer[0m
+  ↳ db/migrate/20190831192151_add_user_id_to_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190831192151"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (622.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:26:07 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 466ms (Views: 447.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:26:11 -0700
+Processing by MessagesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:13
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (22.2ms)
+  Rendered messages/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 227ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-31 12:26:21 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UyYTU1Cuu3zvI6KEfkx9qp6W6VyK+JaOd/HpJRF9gb3zf0OX4DJ9NvzD3lKGlwzdIMcsSWFEO83c1ouJkMyjjA==", "message"=>{"title"=>"ASDadasda", "description"=>"nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn,,,,,,,,,,,,,,,,,,,,,,,,aaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "ASDadasda"], ["description", "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn,,,,,,,,,,,,,,,,,,,,,,,,aaaaaaaaaaaaaaaaaaaaaaaaaa"], ["created_at", "2019-08-31 19:26:21.813375"], ["updated_at", "2019-08-31 19:26:21.813375"], ["user_id", 1]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (179.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 191ms (ActiveRecord: 180.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:26:22 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Update (0.4ms)[0m  [1m[33mUPDATE "messages" SET "updated_at" = ?, "user_id" = ? WHERE "messages"."id" = ?[0m  [["updated_at", "2019-08-31 19:28:07.025353"], ["user_id", 1], ["id", 1]]
+  [1m[35m (192.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/sign_out" for 127.0.0.1 at 2019-08-31 12:29:04 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-08-31 12:29:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:29:12 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (18.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 440ms (Views: 430.5ms | ActiveRecord: 3.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-08-31 12:29:15 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q8OdsNEcZ4m6vn+I7QxmTjM4Kha9AajPiJHe1RcPH4MBy+AttEv2QZEpCLKQoZTxNry2qXDsZRsCMWynr8+RyA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:29:15 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:29:24 -0700
+Processing by MessagesController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `messages' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:13:in `new'
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:29:43 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 12:29:46 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 123ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-08-31 12:30:01 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WUAumS26ghUZX39I1op/V332qIDtIxUTwvBWgTruqLdHo1Od6ya+czUnXEzCYibZAVrif7xpTBzM2pFa4ftcUQ==", "user"=>{"email"=>"fedfsdfs@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fedfsdfs@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "fedfsdfs@gmail.com"], ["encrypted_password", "$2a$11$1XTq0EUWqBElxp/krPlBWuULZ6VO18NgJY04KlnaNpMuxjKTiSBCq"], ["created_at", "2019-08-31 19:30:01.666032"], ["updated_at", "2019-08-31 19:30:01.666032"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (95.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 317ms (ActiveRecord: 96.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:30:01 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 109ms (Views: 97.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:30:04 -0700
+Processing by MessagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:13
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (22.1ms)
+  Rendered messages/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 171ms (Views: 147.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-31 12:31:13 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zwcFGzSANV0EJa9XHjFk03hfjlO7/GWaTILxOB70OW2AkDXnJQXg0/oJSF/T5HmQUErCFDwa0U0Vu2qMDIa4gQ==", "message"=>{"title"=>"Looking for some Ruby on Rails ", "description"=>"SEriously broooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Looking for some Ruby on Rails "], ["description", "SEriously broooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"], ["created_at", "2019-08-31 19:31:13.567280"], ["updated_at", "2019-08-31 19:31:13.567280"], ["user_id", 2]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (175.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 186ms (ActiveRecord: 177.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:31:13 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY "messages"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:32:20 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (18.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 430ms (Views: 412.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:32:22 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 90ms (Views: 86.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-08-31 12:32:27 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0Dnsl+sXoV5+w0fd47MhrMqiPTttK+WLljLdSZqwtykhzQjyH3A3+LGn8s5R6RzY9g3MWDx4t9Ulb/76fZB2Nw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:32:27 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:34:31 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:34:37 -0700
+Processing by MessagesController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `messages' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:13:in `new'
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 12:34:37 -0700
+Processing by MessagesController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `messages' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:13:in `new'
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:34:42 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Migrating to CreateComments (20190831195030)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190831195030_create_comments.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "message_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_6c909d51ab"
+FOREIGN KEY ("message_id")
+  REFERENCES "messages" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190831195030_create_comments.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_message_id" ON "comments" ("message_id")[0m
+  ↳ db/migrate/20190831195030_create_comments.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  ↳ db/migrate/20190831195030_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190831195030"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (128.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-08-31 12:52:08 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 457ms (Views: 438.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:06:19 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 2843ms (Views: 2828.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:06:23 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (19.1ms)
+  Rendered messages/show.html.erb within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7bef189f8>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.iput :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179219902820'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179219872580'
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:06:30 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 144ms (Views: 141.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:06:32 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (54.0ms)
+  Rendered messages/show.html.erb within layouts/application (55.2ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7bef17080>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.iput :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179219964360'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179219877440'
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:07:28 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:07:31 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (10.1ms)
+  Rendered messages/show.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7be5b2828>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179214969160'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179214953280'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:08:29 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 93ms (Views: 86.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:08:31 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (16.5ms)
+  Rendered messages/show.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7bed90a68>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179219118460'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179219102640'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:08:33 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2019-08-31 13:08:35 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (15.0ms)
+  Rendered messages/show.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7be4083d8>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179214112500'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179214096620'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:08:36 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-31 13:08:39 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (16.0ms)
+  Rendered messages/show.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fa7bed6b6f0>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__1217890018803748646_70179219025480'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb__3246193507624029537_70179219002020'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:09:39 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 450ms (Views: 435.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 13:09:43 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 153ms (Views: 133.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-08-31 13:09:55 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sgv7Kw/u/7qvt763hex/gBLEI7UxoGuJNM6cN19rS7woGitIQQwnoOjsr0LVcbc1QsGQDFJUwMmUPmG/cMgBpA==", "user"=>{"email"=>"asdasd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asdasd"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 304ms (Views: 94.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-08-31 13:10:10 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYmE8UYPbM5BfZ/p7pFSXF2J5ZYObGuZ3kUFIIczg55rxOFhbderWf9aAxEJL5T2Aoz8pmvZWcMD4dq1RcQFow==", "user"=>{"email"=>"asdasd@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asdasd@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "asdasd@gmail.com"], ["encrypted_password", "$2a$11$/iqyC9khdD2JSLtN7pnz.uu21lDVY8zPH9lNuoBNqw5LbaePMoCMe"], ["created_at", "2019-08-31 20:10:10.749270"], ["updated_at", "2019-08-31 20:10:10.749270"]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (101.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 318ms (ActiveRecord: 102.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:10:10 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 97ms (Views: 94.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:10:14 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (10.8ms)
+  Rendered messages/show.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac20019888>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__2179594968036586325_70188624068700'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188624036700'
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:12:37 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (12.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 136ms (Views: 126.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/messages/7" for 127.0.0.1 at 2019-08-31 13:12:39 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (16.2ms)
+  Rendered messages/show.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac203929b0>
+Did you mean?  committed!):
+    1: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    2:     <%= f.input :content, label: "Comment" %>
+    3:     <%= f.button :submit %>
+    4: <% end %>
+  
+app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__2179594968036586325_70188625889760'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188625857540'
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:12:54 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:15:03 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 136ms (Views: 130.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:15:05 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (15.6ms)
+  Rendered messages/show.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac15483870>
+Did you mean?  committed!):
+    1: 
+    2: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    3:     <%= f.input :content, label: "Comment" %>
+    4:     <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/comments/_form.html.erb:2:in `_app_views_comments__form_html_erb__2179594968036586325_70188534185160'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188534071620'
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:16:14 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (12.4ms)
+  Rendered messages/show.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac2060ab48>
+Did you mean?  committed!):
+    1: 
+    2: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    3:     <%= f.input :content, label: "Comment" %>
+    4:     <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/comments/_form.html.erb:2:in `_app_views_comments__form_html_erb__2179594968036586325_70188627216960'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188627151520'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:16:15 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 131ms (Views: 128.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/messages/6" for 127.0.0.1 at 2019-08-31 13:16:17 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (17.1ms)
+  Rendered messages/show.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac0c2aa818>
+Did you mean?  committed!):
+    1: 
+    2: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    3:     <%= f.input :content, label: "Comment" %>
+    4:     <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/comments/_form.html.erb:2:in `_app_views_comments__form_html_erb__2179594968036586325_70188457673700'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188457609780'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:16:23 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2019-08-31 13:16:28 -0700
+Processing by MessagesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:13
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.5ms)
+  Rendered messages/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 196ms (Views: 109.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-08-31 13:16:38 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+yiMRWFdbcG7PGsEGNoWaxskJLuG4wbhnxiHQEhuQ74Xw4mig9JaigGO2S7MAtx9/RyrsxSxtkUvqfvCKFIpQw==", "message"=>{"title"=>"ttttttttttttttttttt", "description"=>"ttttttttttttttttttttt"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "ttttttttttttttttttt"], ["description", "ttttttttttttttttttttt"], ["created_at", "2019-08-31 20:16:38.301206"], ["updated_at", "2019-08-31 20:16:38.301206"], ["user_id", 3]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (166.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 167.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:16:38 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:16:39 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (16.3ms)
+  Rendered messages/show.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac15b71088>
+Did you mean?  committed!):
+    1: 
+    2: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    3:     <%= f.input :content, label: "Comment" %>
+    4:     <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/comments/_form.html.erb:2:in `_app_views_comments__form_html_erb__2179594968036586325_70188537754220'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188537724460'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:21:40 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (16.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 124ms (Views: 115.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 13:21:43 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:21:43 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:21:46 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (15.7ms)
+  Rendered messages/show.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for #<Message:0x00007fac0c27b6d0>
+Did you mean?  committed!):
+    1: 
+    2: <%= simple_form_for([@message, @message.comments.build]) do |f| %>
+    3:     <%= f.input :content, label: "Comment" %>
+    4:     <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/comments/_form.html.erb:2:in `_app_views_comments__form_html_erb__2179594968036586325_70188457528740'
+app/views/messages/show.html.erb:5:in `_app_views_messages_show_html_erb___1342881350692892811_70188457513620'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:28:59 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (20.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 669ms (Views: 649.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:29:01 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (254.0ms)
+  Rendered messages/show.html.erb within layouts/application (256.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 330ms (Views: 325.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:29:04 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (5.5ms)
+  Rendered messages/show.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:29:08 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (7.2ms)
+  Rendered messages/show.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 98ms (Views: 95.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/messages/8/comments" for 127.0.0.1 at 2019-08-31 13:29:15 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y0R7avuhL22GlhQELDnfRgkhlhU7o8oVxQ/E/GUKNwIiNSAqs/3b+tcaNPyiEc8cEVTMmkcmmgss302UZ7XHEg==", "comment"=>{"content"=>"I knew it man"}, "commit"=>"Create Comment", "message_id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[36mComment Create (21.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "message_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I knew it man"], ["message_id", 8], ["user_id", 3], ["created_at", "2019-08-31 20:29:15.130135"], ["updated_at", "2019-08-31 20:29:15.130135"]]
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[35m (108.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:8
+Redirected to http://localhost:3000/messages/8
+Completed 302 Found in 148ms (ActiveRecord: 130.3ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:29:15 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (10.0ms)
+  Rendered messages/show.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:29:18 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:32:47 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:32:49 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (8.0ms)
+  Rendered messages/show.html.erb within layouts/application (12.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/messages/9/comments" for 127.0.0.1 at 2019-08-31 13:33:02 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kOs/U8JxJT58KhLgCqXw0eRugn0GdwYU2nOhhr9Xox/Ql5/8qz5XyBcuZBs83Bppw0MG5GtCTnfPHdPHQX5BJA==", "comment"=>{"content"=>"tU SACHI AA"}, "commit"=>"Create Comment", "message_id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[36mComment Create (1.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "message_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "tU SACHI AA"], ["message_id", 9], ["user_id", 3], ["created_at", "2019-08-31 20:33:02.014762"], ["updated_at", "2019-08-31 20:33:02.014762"]]
+  ↳ app/controllers/comments_controller.rb:8
+  [1m[35m (189.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:8
+Redirected to http://localhost:3000/messages/9
+Completed 302 Found in 208ms (ActiveRecord: 191.4ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:33:02 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  Rendered messages/show.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 90ms (Views: 86.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:37:58 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (0.9ms)
+  Rendered comments/_form.html.erb (4.8ms)
+  Rendered messages/show.html.erb within layouts/application (10.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/messages/9/comments/2" for 127.0.0.1 at 2019-08-31 13:38:05 -0700
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:45:36 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (16.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 106ms (Views: 97.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:45:44 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 90ms (Views: 87.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/7" for 127.0.0.1 at 2019-08-31 13:45:45 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 7]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (22.4ms)
+  Rendered messages/show.html.erb within layouts/application (34.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 136ms (Views: 131.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:45:48 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 95ms (Views: 92.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:49:02 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:49:06 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (5.5ms)
+  Rendered comments/_form.html.erb (9.0ms)
+  Rendered messages/show.html.erb within layouts/application (21.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 113ms (Views: 110.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:49:07 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:33
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:30:in `comment_params'
+app/controllers/comments_controller.rb:36:in `find_comment'
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:50:15 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:33
+Completed 400 Bad Request in 20ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:30:in `comment_params'
+app/controllers/comments_controller.rb:36:in `find_comment'
+Started GET "/messages/9/comments/2" for 127.0.0.1 at 2019-08-31 13:50:18 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/9/comments" for 127.0.0.1 at 2019-08-31 13:50:20 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:50:23 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:50:25 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.6ms)
+  Rendered comments/_form.html.erb (8.6ms)
+  Rendered messages/show.html.erb within layouts/application (34.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 126ms (Views: 121.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:50:26 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:33
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:30:in `comment_params'
+app/controllers/comments_controller.rb:36:in `find_comment'
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:50:26 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:33
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:30:in `comment_params'
+app/controllers/comments_controller.rb:36:in `find_comment'
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:56:34 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+Completed 400 Bad Request in 22ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:29:in `comment_params'
+app/controllers/comments_controller.rb:35:in `find_comment'
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:57:13 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 24ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/messagages" for 127.0.0.1 at 2019-08-31 13:57:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/messagages"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-08-31 13:57:20 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 13:57:22 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 8]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (0.8ms)
+  Rendered comments/_form.html.erb (7.1ms)
+  Rendered messages/show.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 108ms (Views: 103.0ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/messages/8/comments/1" for 127.0.0.1 at 2019-08-31 13:57:25 -0700
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages/8/comments/1/edit" for 127.0.0.1 at 2019-08-31 13:57:30 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"8", "id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/messages/8/comments/1/edit" for 127.0.0.1 at 2019-08-31 13:58:36 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"8", "id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 13:58:40 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 121ms (Views: 118.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 13:58:42 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.4ms)
+  Rendered comments/_form.html.erb (7.9ms)
+  Rendered messages/show.html.erb within layouts/application (36.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 109ms (Views: 100.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 13:58:44 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/" for 127.0.0.1 at 2019-08-31 14:00:19 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-08-31 14:00:23 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fg5T+YmccFdLyWHJ86/3r9x0+dlj1QgczGNhzeAI2698QzZpokS3wPXu/TEUETEFg3Hg6QZgOkYRx75YIv9dkg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 14:00:23 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 110ms (Views: 106.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 14:00:24 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.0ms)
+  Rendered comments/_form.html.erb (7.1ms)
+  Rendered messages/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:00:25 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/bin/rake:23
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:05:06 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/amrit/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 47ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:05:07 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:28:in `comment_params'
+app/controllers/comments_controller.rb:34:in `find_comment'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 14:05:10 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 374ms (Views: 371.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2019-08-31 14:05:14 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 1]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (41.5ms)
+  Rendered messages/show.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 126ms (Views: 120.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 14:05:17 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/5" for 127.0.0.1 at 2019-08-31 14:05:19 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 5]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (5.9ms)
+  Rendered messages/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 94ms (Views: 91.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/5/edit" for 127.0.0.1 at 2019-08-31 14:05:20 -0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.8ms)
+  Rendered messages/edit.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 120ms (Views: 77.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/messages/5" for 127.0.0.1 at 2019-08-31 14:05:22 -0700
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ErQtebrTfP8n/iH2DAtv7M4GKtePh4Wbox5StnZ2EEfcSrlGnhQ/ay3jc6gTNaIE2Dit3LNM0YZYxuc7UJhJZA==", "message"=>{"title"=>"Raminder", "description"=>"Sell it??? WHY BRO"}, "commit"=>"Update Message", "id"=>"5"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/messages_controller.rb:30
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (10.8ms)
+  Rendered messages/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 108ms (Views: 102.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-08-31 14:05:25 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 93ms (Views: 77.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-31 14:05:26 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 14:05:28 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 8]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.4ms)
+  Rendered comments/_form.html.erb (8.2ms)
+  Rendered messages/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/messages/8/comments/1" for 127.0.0.1 at 2019-08-31 14:05:31 -0700
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/messages/8" for 127.0.0.1 at 2019-08-31 14:05:37 -0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zup5XroChMsclXZntHCxOEsmPuOlmWbDzxWoyfnKVkal3ANuXu7hfPs5F96R7mUwI1XU/JkGqEI3UxRz2AI+tQ==", "id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[36mMessage Destroy (3.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/messages_controller.rb:38
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/messages_controller.rb:38
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (SQLite3::ConstraintException: FOREIGN KEY constraint failed: DELETE FROM "messages" WHERE "messages"."id" = ?):
+  
+app/controllers/messages_controller.rb:38:in `destroy'
+Started POST "/messages/8/comments" for 127.0.0.1 at 2019-08-31 14:05:51 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wp/3Bj1hfyDeD6teTk+Gmcny6/xUPqI3GygjGhZ0RGrcVw7Kk53lnzeijYY7EVZeySXsZGjXE8pczhcCMMrj6w==", "comment"=>{"content"=>""}, "commit"=>"Create Comment", "message_id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:7:in `create'
+Started POST "/messages/8/comments" for 127.0.0.1 at 2019-08-31 14:05:57 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wp/3Bj1hfyDeD6teTk+Gmcny6/xUPqI3GygjGhZ0RGrcVw7Kk53lnzeijYY7EVZeySXsZGjXE8pczhcCMMrj6w==", "comment"=>{"content"=>""}, "commit"=>"Create Comment", "message_id"=>"8"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:7:in `create'
+Started GET "/messages/8/comments" for 127.0.0.1 at 2019-08-31 14:09:59 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for CommentsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 14:10:05 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 126ms (Views: 116.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/messages/8" for 127.0.0.1 at 2019-08-31 14:10:07 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 8]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.5ms)
+  Rendered comments/_form.html.erb (15.1ms)
+  Rendered messages/show.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 192ms (Views: 183.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/messages/8/comments/1/edit" for 127.0.0.1 at 2019-08-31 14:10:08 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"8", "id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:40
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:37:in `comment_params'
+app/controllers/comments_controller.rb:43:in `find_comment'
+Started GET "/messages/8/comments/1/edit" for 127.0.0.1 at 2019-08-31 14:10:49 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"8", "id"=>"1"}
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:40
+Completed 400 Bad Request in 24ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:37:in `comment_params'
+app/controllers/comments_controller.rb:43:in `find_comment'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 14:10:53 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 14:10:55 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.3ms)
+  Rendered comments/_form.html.erb (7.5ms)
+  Rendered messages/show.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 112ms (Views: 107.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:10:57 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:40
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:37:in `comment_params'
+app/controllers/comments_controller.rb:43:in `find_comment'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 14:11:45 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 94ms (Views: 86.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 14:11:47 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.1ms)
+  Rendered comments/_form.html.erb (9.3ms)
+  Rendered messages/show.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 146ms (Views: 139.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:11:48 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:40
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/comments_controller.rb:37:in `comment_params'
+app/controllers/comments_controller.rb:43:in `find_comment'
+Started GET "/messages" for 127.0.0.1 at 2019-08-31 14:14:24 -0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.erb:1
+  Rendered messages/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 106ms (Views: 99.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/messages/9" for 127.0.0.1 at 2019-08-31 14:14:26 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:49
+  Rendering messages/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."message_id" = ?[0m  [["message_id", 9]]
+  ↳ app/views/messages/show.html.erb:5
+  Rendered collection of comments/_comment.html.erb [1 times] (1.0ms)
+  Rendered comments/_form.html.erb (10.4ms)
+  Rendered messages/show.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 142ms (Views: 137.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/messages/9/comments/2/edit" for 127.0.0.1 at 2019-08-31 14:14:27 -0700
+Processing by CommentsController#edit as HTML
+  Parameters: {"message_id"=>"9", "id"=>"2"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:38
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."message_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["message_id", 9], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:41
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 85ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
